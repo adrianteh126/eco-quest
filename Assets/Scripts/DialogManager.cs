@@ -29,7 +29,7 @@ public class DialogManager : MonoBehaviour {
         messageText.text = messageToDisplay.message;
 
         Actor actorToDisplay = currentActors[messageToDisplay.actorId];
-        actorImage.name = actorToDisplay.name;
+        actorName.text = actorToDisplay.name;
         actorImage.sprite = actorToDisplay.sprite;
     }
 
@@ -42,6 +42,7 @@ public class DialogManager : MonoBehaviour {
             Debug.Log("Conversation End");
             backgroundBox.LeanScale(Vector3.zero, 0.5f).setEaseInOutExpo();
             isActive = false;
+            FindObjectOfType<SceneController>().NextLevel(1);
         }
     }
 

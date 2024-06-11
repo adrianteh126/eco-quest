@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private void FixedUpdate() {
         if (DialogManager.isActive == true) return;
+
         rb.AddForce(moveInput * moveSpeed);
     }
 }
