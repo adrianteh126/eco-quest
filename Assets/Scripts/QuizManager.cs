@@ -17,8 +17,13 @@ public class QuizManager : MonoBehaviour {
     public Message[] loseMessage;
     public Actor[] actors;
 
-
     AudioManager audioManager;
+    [SerializeField]
+    private BooleanSO CowCompletedSO;
+    [SerializeField]
+    private BooleanSO ChickenCompletedSO;
+    [SerializeField]
+    private BooleanSO RabbitCompletedSO;
 
     void Awake() {
         // audioManager = GameObject.FindGameObjectsWithTag("Audio").GetComponent<AudioManager>();
@@ -26,6 +31,7 @@ public class QuizManager : MonoBehaviour {
     }
 
     void Start() {
+        SceneController.targetSceneIndex = 1;
         UpdateQuestion();
     }
 
@@ -45,7 +51,19 @@ public class QuizManager : MonoBehaviour {
             Heart.health -= 1;
             if (Heart.health == 0) {
                 Debug.Log("You lose all your health");
-                audioManager.PlaySFX(audioManager.cowSFX);
+                switch (SceneManager.GetActiveScene().buildIndex) {
+                    case 2:
+                        audioManager.PlaySFX(audioManager.cowSFX);
+                        break;
+                    case 3:
+                        audioManager.PlaySFX(audioManager.chickenSFX);
+                        break;
+                    case 4:
+                        audioManager.PlaySFX(audioManager.rabbitSFX);
+                        break;
+                    default:
+                        break;
+                }
                 StartCoroutine(LoseGame());
                 DialogManager.isActive = false;
             }
@@ -64,7 +82,22 @@ public class QuizManager : MonoBehaviour {
         }
         else {
             Debug.Log("Question End");
-            audioManager.PlaySFX(audioManager.cowSFX);
+            switch (SceneManager.GetActiveScene().buildIndex) {
+                case 2:
+                    audioManager.PlaySFX(audioManager.cowSFX);
+                    CowCompletedSO.Value = true;
+                    break;
+                case 3:
+                    audioManager.PlaySFX(audioManager.chickenSFX);
+                    ChickenCompletedSO.Value = true;
+                    break;
+                case 4:
+                    audioManager.PlaySFX(audioManager.rabbitSFX);
+                    RabbitCompletedSO.Value = true;
+                    break;
+                default:
+                    break;
+            }
             StartCoroutine(FinishGame());
             DialogManager.isActive = false;
         }
@@ -73,13 +106,13 @@ public class QuizManager : MonoBehaviour {
     IEnumerator FinishGame() {
         FindObjectOfType<DialogManager>().OpenDialog(messages, actors);
         yield return new WaitForSeconds(5);
-        FindObjectOfType<SceneController>().NextLevel(0);
+        FindObjectOfType<SceneController>().NextLevel();
     }
 
     IEnumerator LoseGame() {
         FindObjectOfType<DialogManager>().OpenDialog(loseMessage, actors);
         yield return new WaitForSeconds(5);
-        FindObjectOfType<SceneController>().NextLevel(0);
+        FindObjectOfType<SceneController>().NextLevel();
     }
 
 }

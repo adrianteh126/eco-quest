@@ -253,6 +253,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23735603}
   m_CullTransparentMesh: 1
+--- !u!1 &88784369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 88784370}
+  - component: {fileID: 88784371}
+  m_Layer: 5
+  m_Name: Stars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &88784370
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88784369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 811844059}
+  - {fileID: 1161332429}
+  - {fileID: 1981266803}
+  m_Father: {fileID: 815389975}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 130, y: -65}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &88784371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88784369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 3
+  m_Spacing: 10
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &95130222
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,6 +668,7 @@ MonoBehaviour:
     sprite: {fileID: -2104137336, guid: cd302c7878d850a40a6ebd78fa895ce2, type: 3}
   - name: You
     sprite: {fileID: -941664014, guid: 2def72b982b683b4481fbc9a60e62cd9, type: 3}
+  targetSceneIndex: 2
 --- !u!1 &372267005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,6 +1154,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 10949378}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &811844058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 811844059}
+  - component: {fileID: 811844061}
+  - component: {fileID: 811844060}
+  m_Layer: 5
+  m_Name: Star
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &811844059
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811844058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 88784370}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &811844060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811844058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 06d11122218ccaf4196bb07b2b222300, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &811844061
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811844058}
+  m_CullTransparentMesh: 1
 --- !u!1 &815389971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,7 +1242,7 @@ GameObject:
   - component: {fileID: 815389973}
   - component: {fileID: 815389972}
   m_Layer: 5
-  m_Name: Dialog
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1182,6 +1323,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 88784370}
   - {fileID: 1748984174}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4167,6 +4309,81 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1161332428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1161332429}
+  - component: {fileID: 1161332431}
+  - component: {fileID: 1161332430}
+  m_Layer: 5
+  m_Name: Star (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1161332429
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161332428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 88784370}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1161332430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161332428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 06d11122218ccaf4196bb07b2b222300, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1161332431
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161332428}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1168976991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4216,6 +4433,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
+      propertyPath: targetSceneIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
+      propertyPath: messages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
       propertyPath: actors.Array.data[0].name
       value: Ruby
       objectReference: {fileID: 0}
@@ -4227,6 +4452,21 @@ PrefabInstance:
       propertyPath: actors.Array.data[0].sprite
       value: 
       objectReference: {fileID: 443503291, guid: 4e3ee61b47d7acb40802319fde4b8323, type: 3}
+    - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: "Hop-hop! Hello! I'm Ruby the Rabbit, and I'm here to help you save
+        water. Water is precious, and we need to use it wisely. How much do you know
+        about conserving water? Let\u2019s find out with a quiz! Ready to hop to
+        it?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
+      propertyPath: messages.Array.data[1].message
+      value: es, Ruby! I'm ready to learn about water conservation.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
+      propertyPath: messages.Array.data[2].message
+      value: "Awesome! Let\u2019s dive into the quiz."
+      objectReference: {fileID: 0}
     - target: {fileID: 8002945183739297787, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
       propertyPath: m_Size.x
       value: 0.8817974
@@ -6737,6 +6977,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26946361282fc96468c583442393da90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CowCompletedSO: {fileID: 11400000, guid: d12a4cfa58fa1634ab9e53b3e583c454, type: 2}
+  ChickenCompletedSO: {fileID: 11400000, guid: d0ac703068f8dc3489d5446f28c8a99d, type: 2}
+  RabbitCompletedSO: {fileID: 11400000, guid: 0dce582e6a9459343a03a4f7b99c5536, type: 2}
+  stars:
+  - {fileID: 811844060}
+  - {fileID: 1161332430}
+  - {fileID: 1981266804}
+  messages:
+  - actorId: 0
+    message: "Phew, that was quite the adventure! I\u2019ve learned so much from
+      Clara, Chucky, and Ruby. Recycling, conserving energy, and saving water are
+      more important than I ever realized. It feels great knowing I can make a difference!"
+  - actorId: 0
+    message: Clara taught me that recycling helps reduce waste and turn old materials
+      into new products. Now I know what can and can't be recycled.
+  - actorId: 0
+    message: From Chucky, I learned how important it is to conserve energy. Using
+      energy-efficient appliances and renewable energy sources can really cut down
+      on pollution and save money.
+  - actorId: 0
+    message: And Ruby showed me that every drop of water counts. Simple changes like
+      fixing leaks and taking shorter showers can make a big impact on our water
+      supply.
+  - actorId: 0
+    message: "I feel empowered with all this new knowledge. I can\u2019t wait to
+      share these tips with my friends and family, and start making a difference
+      in my daily life. Every small action adds up to a big change!"
+  - actorId: 0
+    message: "Time to head back and put what I\u2019ve learned into practice. Let\u2019s
+      make this planet a better place, one step at a time!"
+  actors:
+  - name: Player
+    sprite: {fileID: -941664014, guid: 2def72b982b683b4481fbc9a60e62cd9, type: 3}
 --- !u!1001 &1698312589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6790,6 +7063,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: f15e5b8e4f4433c458edaf30117d217a, type: 2}
     - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
+      propertyPath: targetSceneIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
       propertyPath: actors.Array.data[0].name
       value: Chucky
       objectReference: {fileID: 0}
@@ -6801,6 +7078,27 @@ PrefabInstance:
       propertyPath: actors.Array.data[0].sprite
       value: 
       objectReference: {fileID: -1493914649, guid: 58dc0264049b2ae4e903f1760f016bce, type: 3}
+    - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: Cluck-cluck! Hi there! I'm Chucky the Chicken, here to help you save
+        energy. Do you know how to keep your energy bills low and the environment
+        happy? Let's see how much you know about energy conservation. Ready to take
+        the quiz?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
+      propertyPath: messages.Array.data[1].message
+      value: Yes, Chucky! I'm ready to learn about energy conservation.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
+      propertyPath: messages.Array.data[2].message
+      value: "Energy conservation means using less energy by being more efficient
+        and using renewable sources. It's crucial for reducing our carbon footprint.
+        Let\u2019s get cracking!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339291748264550566, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
+      propertyPath: messages.Array.data[3].message
+      value: Let's go!
+      objectReference: {fileID: 0}
     - target: {fileID: 8002945183739297787, guid: 7d2e0e2aa563bd6489cef5253578cef6, type: 3}
       propertyPath: m_Size.x
       value: 0.694743
@@ -7180,6 +7478,81 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!1 &1981266802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1981266803}
+  - component: {fileID: 1981266805}
+  - component: {fileID: 1981266804}
+  m_Layer: 5
+  m_Name: Star (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1981266803
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981266802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 88784370}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1981266804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981266802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 06d11122218ccaf4196bb07b2b222300, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1981266805
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981266802}
+  m_CullTransparentMesh: 1
 --- !u!1 &2039544782
 GameObject:
   m_ObjectHideFlags: 0

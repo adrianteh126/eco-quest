@@ -2624,7 +2624,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 443503291, guid: 4e3ee61b47d7acb40802319fde4b8323, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2806,41 +2806,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - questionDescription: Which of the following items can be recycled?
+  - questionDescription: Which method is best for conserving water in the garden?
     answers:
-    - answerDescription: Plastic bags
-    - answerDescription: Styrofoam
-    - answerDescription: Glass bottles
-    - answerDescription: Food scraps
+    - answerDescription: Watering plants during the hottest part of the day
+    - answerDescription: Using a hose without a nozzle
+    - answerDescription: 'Installing a drip irrigation system '
+    - answerDescription: Overwatering plants
     correctAnswerIndex: 2
-  - questionDescription: 'What is the main benefit of recycling paper? '
+  - questionDescription: What household fixture can save the most water if replaced
+      with a more efficient model?
     answers:
-    - answerDescription: Reduces water pollution
-    - answerDescription: Increases landfill waste
-    - answerDescription: Saves trees
-    - answerDescription: Consumes more energy
-    correctAnswerIndex: 2
-  - questionDescription: Which symbol indicates a recyclable material?
-    answers:
-    - answerDescription: A triangle with arrows
-    - answerDescription: A skull and crossbones
-    - answerDescription: A leaf
-    - answerDescription: A circle with a line through it
+    - answerDescription: Showerhead
+    - answerDescription: Lightbulb
+    - answerDescription: Faucet
+    - answerDescription: Dishwasher
     correctAnswerIndex: 0
-  - questionDescription: Which of the following should not be placed in a recycling
-      bin?
+  - questionDescription: What is a simple way to save water when brushing your teeth?
     answers:
-    - answerDescription: Cardboard boxes
-    - answerDescription: Plastic bottles
-    - answerDescription: Used napkins
-    - answerDescription: Aluminum cans
-    correctAnswerIndex: 2
-  - questionDescription: What can recycled plastic be turned into?
+    - answerDescription: Leaving the tap running
+    - answerDescription: Using a glass of water to rinse
+    - answerDescription: Using more toothpaste
+    - answerDescription: Brushing longer
+    correctAnswerIndex: 1
+  - questionDescription: Which of these activities uses the most water at home?
     answers:
-    - answerDescription: Compost
-    - answerDescription: New plastic products
-    - answerDescription: Food waste
-    - answerDescription: Coal
+    - answerDescription: Taking a shower
+    - answerDescription: Flushing the toilet
+    - answerDescription: Washing dishes by hand
+    - answerDescription: Taking a bath
+    correctAnswerIndex: 3
+  - questionDescription: What is a benefit of fixing a leaky faucet?
+    answers:
+    - answerDescription: Increases water usage
+    - answerDescription: Saves water
+    - answerDescription: Causes more leaks
+    - answerDescription: Wastes money
     correctAnswerIndex: 1
   currentQuestionNumber: {fileID: 1473657375}
   options:
@@ -2852,17 +2852,17 @@ MonoBehaviour:
   questionDescription: {fileID: 1974704466}
   messages:
   - actorId: 0
-    message: Moo-velous! You've done a fantastic job with the recycling questions.
-      Remember, every little effort helps our planet. Keep recycling and spreading
-      the word. See you next time
+    message: Hop-tastic job! You've done really well with the water conservation
+      questions. Keep practicing these habits and you'll make a big difference. Thanks
+      for playing, and see you soon!
   loseMessage:
   - actorId: 0
-    message: "Oh no, it looks like you didn\u2019t get all the answers right this
-      time. But don't worry, learning is a journey! Recycling can be tricky, but
-      every bit of knowledge helps. Come back later!"
+    message: "Hop-hop! It seems you didn\u2019t get all the answers right this time.
+      But don't worry, water conservation can be a bit complex. It's wonderful that
+      you're trying to learn. Come back and try the quiz again!"
   actors:
-  - name: Clara
-    sprite: {fileID: -2104137336, guid: cd302c7878d850a40a6ebd78fa895ce2, type: 3}
+  - name: Ruby
+    sprite: {fileID: 443503291, guid: 4e3ee61b47d7acb40802319fde4b8323, type: 3}
   CowCompletedSO: {fileID: 11400000, guid: d12a4cfa58fa1634ab9e53b3e583c454, type: 2}
   ChickenCompletedSO: {fileID: 11400000, guid: d0ac703068f8dc3489d5446f28c8a99d, type: 2}
   RabbitCompletedSO: {fileID: 11400000, guid: 0dce582e6a9459343a03a4f7b99c5536, type: 2}
@@ -3103,7 +3103,7 @@ GameObject:
   - component: {fileID: 1251289499}
   - component: {fileID: 1251289498}
   m_Layer: 5
-  m_Name: Cow
+  m_Name: Rabbit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3148,7 +3148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2104137336, guid: cd302c7878d850a40a6ebd78fa895ce2, type: 3}
+  m_Sprite: {fileID: 443503291, guid: 4e3ee61b47d7acb40802319fde4b8323, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

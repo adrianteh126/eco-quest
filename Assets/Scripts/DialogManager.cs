@@ -42,7 +42,7 @@ public class DialogManager : MonoBehaviour {
             Debug.Log("Conversation End");
             backgroundBox.LeanScale(Vector3.zero, 0.5f).setEaseInOutExpo();
             isActive = false;
-            FindObjectOfType<SceneController>().NextLevel(1);
+            FindObjectOfType<SceneController>().NextLevel();
         }
     }
 

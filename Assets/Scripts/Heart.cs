@@ -15,8 +15,6 @@ public class Heart : MonoBehaviour {
         health = 2;
     }
 
-
-
     // Update is called once per frame
     void Update() {
         if (health <= 0) return;

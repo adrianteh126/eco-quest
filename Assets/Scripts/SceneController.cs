@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour {
     public static SceneController instance;
     [SerializeField] Animator transitionAnim;
+    public static int targetSceneIndex;
 
     private void Awake() {
         if (instance == null) {
@@ -17,8 +18,8 @@ public class SceneController : MonoBehaviour {
         }
     }
 
-    public void NextLevel(int targetSceneBuildIndex) {
-        StartCoroutine(LoadLevel(targetSceneBuildIndex));
+    public void NextLevel() {
+        StartCoroutine(LoadLevel(targetSceneIndex));
     }
 
     IEnumerator LoadLevel(int targetSceneBuildIndex) {
