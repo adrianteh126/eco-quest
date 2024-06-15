@@ -4,10 +4,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour {
-    public GameObject howToPlay;
+    public GameObject HowToPlayPanel;
+    public GameObject StoryPanel;
+
+    [SerializeField]
+    private BooleanSO CowCompletedSO;
+    [SerializeField]
+    private BooleanSO ChickenCompletedSO;
+    [SerializeField]
+    private BooleanSO RabbitCompletedSO;
 
     public void Start() {
-        howToPlay.SetActive(false);
+        HowToPlayPanel.SetActive(false);
+        StoryPanel.SetActive(false);
     }
 
     public void Update() {
@@ -17,23 +26,41 @@ public class MenuManager : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void PlayAgain() {
+        CowCompletedSO.Value = false;
+        ChickenCompletedSO.Value = false;
+        RabbitCompletedSO.Value = false;
+        SceneManager.LoadScene(1);
+    }
+
     public void ShowHowToPlay() {
-        if (howToPlay != null) {
-            howToPlay.SetActive(true);
+        if (HowToPlayPanel != null) {
+            HowToPlayPanel.SetActive(true);
         }
         else {
-            Debug.LogError("howToPlay object is not assigned!");
+            Debug.LogError("HowToPlayPanel object is not assigned!");
+        }
+    }
+
+    public void ShowStory() {
+        if (StoryPanel != null) {
+            StoryPanel.SetActive(true);
+        }
+        else {
+            Debug.LogError("StoryPanel object is not assigned!");
         }
     }
 
 
     public void BackToMenu() {
-        if (howToPlay != null) {
-            howToPlay.SetActive(false);
+        if (HowToPlayPanel != null) {
+            HowToPlayPanel.SetActive(false);
         }
-        else {
-            Debug.LogError("howToPlay object is not assigned!");
+
+        if (StoryPanel != null) {
+            StoryPanel.SetActive(false);
         }
+
     }
 
     public void QuitGame() {

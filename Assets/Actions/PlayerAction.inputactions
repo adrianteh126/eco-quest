@@ -15,6 +15,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "Dialog",
+                    "type": "Button",
+                    "id": "ca65b2a8-b0ad-4350-9e6f-629b4fabcabd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Look",
                     "type": "Value",
                     "id": "cb872f9c-6b14-4f36-8eff-a1a7b159ac04",
@@ -27,15 +36,6 @@
                     "name": "Fire",
                     "type": "Button",
                     "id": "acb054a1-7c69-46c2-9729-1f99308405e5",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Dialog",
-                    "type": "Button",
-                    "id": "6e601e0a-d2a5-47e0-b6ea-48631e418f43",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -265,11 +265,22 @@
                 },
                 {
                     "name": "",
-                    "id": "64204003-ad7e-48a8-bed7-05818a388fd4",
+                    "id": "186840b7-b43e-475c-b654-78c12ec665cb",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
+                    "groups": "",
+                    "action": "Dialog",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ce3003db-385f-475f-9110-516765bcef12",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Dialog",
                     "isComposite": false,
                     "isPartOfComposite": false

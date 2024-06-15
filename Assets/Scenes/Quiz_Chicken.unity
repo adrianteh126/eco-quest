@@ -5116,6 +5116,7 @@ MonoBehaviour:
   SFXSource: {fileID: 13420200}
   background: {fileID: 8300000, guid: 824c3e82911e85f4ebf152097a02aeaa, type: 3}
   background2: {fileID: 8300000, guid: fd984243d88e458478264771d451066d, type: 3}
+  background3: {fileID: 8300000, guid: 525534a16ffd1af42b9ad87cd333c4ca, type: 3}
   answerCorrect: {fileID: 8300000, guid: 6836789aaf8d6b34fafcd726303655f5, type: 3}
   answerWrong: {fileID: 8300000, guid: 0054e4c030b9fd9488e1faafbbc13f8f, type: 3}
   cowSFX: {fileID: 8300000, guid: 7f93b1caef1a32b458c0118f88071b26, type: 3}

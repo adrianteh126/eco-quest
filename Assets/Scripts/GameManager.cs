@@ -34,10 +34,10 @@ public class GameManager : MonoBehaviour {
 
         if (CowCompletedSO.Value && ChickenCompletedSO.Value && RabbitCompletedSO.Value) {
             // three starthree
-            SceneController.targetSceneIndex = 0;
-            FindObjectOfType<DialogManager>().OpenDialog(messages, actors);
             for (int i = 0; i < stars.Length; i++) stars[i].enabled = true;
 
+            SceneController.targetSceneIndex = 5; // game end screen
+            FindObjectOfType<DialogManager>().OpenDialog(messages, actors);
         }
         else if ((CowCompletedSO.Value && ChickenCompletedSO.Value) || (ChickenCompletedSO.Value && RabbitCompletedSO.Value) || (RabbitCompletedSO.Value && CowCompletedSO.Value)) {
             // two star

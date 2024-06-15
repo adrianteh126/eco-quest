@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour {
     [Header("---------- Audio Clip ----------")]
     public AudioClip background;
     public AudioClip background2;
+    public AudioClip background3;
     public AudioClip answerCorrect;
     public AudioClip answerWrong;
     public AudioClip cowSFX;
@@ -19,10 +20,9 @@ public class AudioManager : MonoBehaviour {
 
     private void Start() {
         int currentStage = SceneManager.GetActiveScene().buildIndex;
-        if (currentStage == 0)
-            musicSource.clip = background;
-        else
-            musicSource.clip = background2;
+        if (currentStage == 0 || currentStage == 5) musicSource.clip = background3;
+        else if (currentStage == 1) musicSource.clip = background;
+        else musicSource.clip = background2;
         musicSource.loop = true;
         musicSource.Play();
     }

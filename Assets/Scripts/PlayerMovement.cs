@@ -14,9 +14,26 @@ public class PlayerMovement : MonoBehaviour {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void OnMove(InputValue value) {
-        moveInput = value.Get<Vector2>();
+    // private void OnMove(InputValue value) {
+    //     moveInput = value.Get<Vector2>();
 
+    //     // animation
+    //     if (moveInput == Vector2.zero) {
+    //         animator.SetBool("isWalking", false);
+    //     }
+    //     else {
+    //         animator.SetBool("isWalking", true);
+    //         if (moveInput.x > 0) {
+    //             spriteRenderer.flipX = false;
+    //         }
+    //         if (moveInput.x < 0) {
+    //             spriteRenderer.flipX = true;
+    //         }
+    //     }
+    // }
+
+    public void InputPlayer(InputAction.CallbackContext context) {
+        moveInput = context.ReadValue<Vector2>();
         // animation
         if (moveInput == Vector2.zero) {
             animator.SetBool("isWalking", false);
@@ -29,13 +46,23 @@ public class PlayerMovement : MonoBehaviour {
             if (moveInput.x < 0) {
                 spriteRenderer.flipX = true;
             }
-
         }
     }
 
+    // private void Update() {
+    //     // Vector2 movement = new Vector2(moveInput.x, moveInput.y);
+    //     // movement.Normalize();
+    //     if (DialogManager.isActive == true) return;
+
+    //     Vector2 force = moveInput * moveSpeed;
+    //     Debug.Log($"{moveInput} * {moveSpeed} = {force}");
+    //     rb.AddForce(force);
+    // }
+
     private void FixedUpdate() {
         if (DialogManager.isActive == true) return;
-
-        rb.AddForce(moveInput * moveSpeed);
+        Vector2 force = moveInput * moveSpeed;
+        Debug.Log($"{moveInput} * {moveSpeed} = {force}");
+        rb.AddForce(force);
     }
 }

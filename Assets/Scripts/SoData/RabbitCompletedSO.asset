@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da205a4e384a5048bfd829b7d7ba1e0, type: 3}
   m_Name: RabbitCompletedSO
   m_EditorClassIdentifier: 
-  _value: 0
+  _value: 1
